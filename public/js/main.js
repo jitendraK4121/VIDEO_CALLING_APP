@@ -46,6 +46,10 @@ const PeerConnection = (function(){
                 peerConnection = createPeerConnection();
             }
             return peerConnection;
+        },
+        // Add this new reset method below
+        reset: () => {
+            peerConnection = null;
         }
     }
 })();
