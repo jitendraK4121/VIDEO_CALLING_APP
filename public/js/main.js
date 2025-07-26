@@ -35,6 +35,8 @@ peerConnection.ontrack = function(event) {
         console.log("Attaching remote stream to video element.");
         remoteVideo.srcObject = event.streams[0];
     }
+            // === ADD THIS FINAL LINE TO FORCE UNMUTE ===
+        remoteVideo.muted = false;
 }
         // listen for ice candidate
         peerConnection.onicecandidate = function(event) {
