@@ -142,6 +142,7 @@ const endCall = () => {
     const pc = PeerConnection.getInstance();
     if(pc) {
         pc.close();
+        PeerConnection.reset(); // Add this line!
         endCallBtn.style.display = 'none';
     }
 }
