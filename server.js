@@ -21,7 +21,8 @@ app.use(express.static("public"));
 // handle incoming http request
 app.get("/", (req, res) => {
     console.log("GET Request /");
-    res.sendFile(join(__dirname + "/app/index.html"));
+   // res.sendFile(join(__dirname + "/app/index.html"));
+    res.sendFile(join(__dirname, 'app', 'index.html'));
 });
 
 // handle socket connections
