@@ -40,6 +40,7 @@ While WebRTC handles the direct call, it needs a way for users to find each othe
 * **How it's used:** A lightweight **Node.js** and **Express** server uses **Socket.IO** to manage a real-time signaling channel. It allows users to announce their presence, send "offers" to call another user, and exchange the network information (ICE candidates) needed to establish the WebRTC connection.
 
     * **Socket.IO** is used over plain WebSockets because it provides helpful abstractions like "rooms" and, crucially, has fallbacks (like HTTP long-polling) to ensure a connection can be made even on restrictive networks where WebSockets might be blocked.
+<img width="1450" height="1211" alt="image" src="https://github.com/user-attachments/assets/3e784231-5e4b-435e-84f3-fa494fd0f1f2" />
 
 ---
 
